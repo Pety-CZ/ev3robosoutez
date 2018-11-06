@@ -1,7 +1,7 @@
 from ev3dev.auto import *
 import ev3dev.ev3 as ev3
-import time
-
+from ev3dev.ev3 import TouchSensor
+from ev3dev.ev3 import ColorSensor
 
 COL_VALUE = 50
 SPEED = 250
@@ -91,7 +91,7 @@ def check_driveFull():
 # 			map[][][] = map[I][J][False]
 #
 # 	# # TODO: WRITE DEFINITION OF STARTING BLCOK
-# 
+#
 # # 	map.append((3, 3, False))
 # # 	map.append((4, 3, False))
 # # 	map.append((5, 3, False))

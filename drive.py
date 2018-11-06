@@ -38,28 +38,28 @@ def check_left():
 # 		X = X - 1
 
 def colision():
-	if ts.value():
-		if cl.value() <= COL_VALUE:
-			crash()
-			left()
-		else:
-			crash()
-			right()
-			fwd()
-			if ts.value():
-				crash()
-				right()
-                for x in range(2):
+    if ts.value():
+        if cl.value() <= COL_VALUE:
+            crash()
+            left()
+        else:
+            crash()
+            right()
+            fwd()
+            if ts.value():
+                crash()
+                right()
+                for x in range(two):
                     fwd()
-				if ts.value():
-					if cl.value() <= COL_VALUE:
-						crash()
-						left()
-				else:
-					crash()
-					for y in range(2):
+                if ts.value():
+                    if cl.value() <= COL_VALUE:
+                        crash()
+                        left()
+                    else:
+                        crash()
+                    for y in range(two):
                         right()
-					fwd()
+                        fwd()
 
 def fwd():
 	DIRECTION = 0
